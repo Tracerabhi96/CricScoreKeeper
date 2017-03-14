@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.infinityinc.abhishek.com.myapp.MainActivity">
+
+    <ImageView
+        android:layout_width="384dp"
+        android:layout_height="511dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="0dp"
+        android:src="@drawable/unnamed"
+        android:scaleType="fitXY"
+        android:id="@+id/imageView" />
+
+    <TextView
+        android:text="TEAM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:id="@+id/mytemtextview"
+        tools:layout_editor_absoluteY="0dp"
+        app:layout_constraintRight_toRightOf="@+id/imageView"
+        app:layout_constraintLeft_toLeftOf="@+id/imageView" />
+
+    <TextView
+        android:text="SCORE :"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:id="@+id/scoretextview"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/wicketstextview"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:text="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/onebutton"
+        android:onClick="addScore"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <Button
+        android:text="2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="addScore"
+        android:id="@+id/twobutton"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        android:layout_marginStart="8dp"
+        app:layout_constraintLeft_toRightOf="@+id/onebutton"
+        app:layout_constraintRight_toLeftOf="@+id/threebutton"
+        android:layout_marginEnd="8dp" />
+
+    <Button
+        android:text="3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="addScore"
+        android:id="@+id/threebutton"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <Button
+        android:text="4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="addScore"
+        android:id="@+id/fourbutton"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/onebutton" />
+
+    <Button
+        android:text="5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="addScore"
+        android:id="@+id/fivebutton"
+        app:layout_constraintRight_toLeftOf="@+id/sixbutton"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintLeft_toRightOf="@+id/fourbutton"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/onebutton" />
+
+    <Button
+        android:text="6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="addScore"
+        android:id="@+id/sixbutton"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/fivebutton" />
+
+    <TextView
+        android:text="EXTRAS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView8"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginTop="14dp"
+        app:layout_constraintTop_toBottomOf="@+id/fourbutton"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.0" />
+
+    <Button
+        android:text="WIDE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="addScore"
+        android:id="@+id/widebutton"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <Button
+        android:text="NO BALL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="addScore"
+        android:id="@+id/noballbutton"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView8"
+        app:layout_constraintRight_toLeftOf="@+id/RESET"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintLeft_toRightOf="@+id/widebutton" />
+
+    <Button
+        android:text="RESET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="addScore"
+        android:id="@+id/RESET"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView8"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:text="BALLS:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ballstextview"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/wicketstextview" />
+
+    <TextView
+        android:text="RUNS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:id="@+id/textView7"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/ballstextview"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <Button
+        android:text="OUT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/outbutton"
+        android:onClick="addScore"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/threebutton"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="18dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginEnd="16dp" />
+
+    <TextView
+        android:text="0"
+        android:layout_width="287dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/score"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/mytemtextview"
+        android:layout_marginStart="8dp"
+        app:layout_constraintLeft_toRightOf="@+id/scoretextview" />
+
+    <TextView
+        android:text="0"
+        android:layout_width="279dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/balls"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/wicketstextview"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toRightOf="@+id/ballstextview" />
+
+    <TextView
+        android:text="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/wickets"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        app:layout_constraintBaseline_toBaselineOf="@+id/wicketstextview"
+        android:layout_marginStart="8dp"
+        app:layout_constraintLeft_toRightOf="@+id/wicketstextview" />
+
+    <TextView
+        android:text="WICKETS:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:id="@+id/wicketstextview"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/score" />
+</android.support.constraint.ConstraintLayout>
